@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.125rem;
+
+  --brightBlue: #3a7bfd;
+  --gradient: linear-gradient(#57ddff, #c058f3);
+  --white: #ffffff;
+
+  --pageBackground: #fafafa;
+
+  --checkbox: #e3e4f1;
+  --todoBackground: #ffffff;
+  --textPrimary: #494c6b;
+
+  --textSecondary: #9495a5;
+  --textCompleted: #d1d2da;
+
+  --hover: #181824;
+}
+
+.dark {
+  --pageBackground: #181824;
+  --todoBackground: #25273d;
+  --checkbox: #393a4a;
+
+  --textPrimary: #c8cbe6;
+  --textSecondary: #767992;
+  --textCompleted: #4d5067;
+
+  --hover: #ffffff;
+
+}
