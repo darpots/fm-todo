@@ -10,7 +10,7 @@
   import { flip } from "svelte/animate";
   import { dndzone } from "svelte-dnd-action";
 
-  let action = "all";
+  let action: string | boolean = "all";
 
   $: items = filterTodos($allTodos, action) as Todo[];
 

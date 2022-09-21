@@ -1,6 +1,8 @@
 <script lang="ts">
-  export let activeTodos;
-  export let action;
+  import type { Todo } from "../types/types";
+
+  export let activeTodos: number;
+  export let action: string | boolean;
   import { allTodos, clearCompleted } from "../stores/store";
 
   $: activeTodos = $allTodos.filter((el) => !el.completed).length;
